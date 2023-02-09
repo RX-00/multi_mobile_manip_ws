@@ -1,0 +1,15 @@
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target _puma_motor_msgs_generate_messages_check_deps_Feedback
+[  0%] Built target _puma_motor_msgs_generate_messages_check_deps_Status
+[  0%] Built target _puma_motor_msgs_generate_messages_check_deps_MultiStatus
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target _puma_motor_msgs_generate_messages_check_deps_MultiFeedback
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[ 22%] Built target puma_motor_msgs_generate_messages_py
+[ 40%] Built target puma_motor_msgs_generate_messages_cpp
+[ 63%] Built target puma_motor_msgs_generate_messages_eus
+[ 81%] Built target puma_motor_msgs_generate_messages_lisp
+[100%] Built target puma_motor_msgs_generate_messages_nodejs
+[100%] Built target puma_motor_msgs_generate_messages

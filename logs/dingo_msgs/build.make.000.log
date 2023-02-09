@@ -1,0 +1,37 @@
+[  0%] Built target _dingo_msgs_generate_messages_check_deps_RGB
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target _dingo_msgs_generate_messages_check_deps_Lights
+[  0%] Built target _dingo_msgs_generate_messages_check_deps_Fans
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target _dingo_msgs_generate_messages_check_deps_Status
+[  4%] [34m[1mGenerating Python from MSG dingo_msgs/Fans[0m
+[  9%] [34m[1mGenerating C++ code from dingo_msgs/Fans.msg[0m
+[ 13%] [34m[1mGenerating C++ code from dingo_msgs/Lights.msg[0m
+[ 18%] [34m[1mGenerating Python from MSG dingo_msgs/Lights[0m
+[ 22%] [34m[1mGenerating C++ code from dingo_msgs/Status.msg[0m
+[ 27%] [34m[1mGenerating EusLisp code from dingo_msgs/Fans.msg[0m
+[ 31%] [34m[1mGenerating Python from MSG dingo_msgs/Status[0m
+[ 36%] [34m[1mGenerating C++ code from dingo_msgs/RGB.msg[0m
+[ 40%] [34m[1mGenerating EusLisp code from dingo_msgs/Lights.msg[0m
+[ 40%] Built target dingo_msgs_generate_messages_cpp
+[ 45%] [34m[1mGenerating Lisp code from dingo_msgs/Fans.msg[0m
+[ 50%] [34m[1mGenerating Python from MSG dingo_msgs/RGB[0m
+[ 54%] [34m[1mGenerating EusLisp code from dingo_msgs/Status.msg[0m
+[ 59%] [34m[1mGenerating Lisp code from dingo_msgs/Lights.msg[0m
+[ 63%] [34m[1mGenerating Lisp code from dingo_msgs/Status.msg[0m
+[ 68%] [34m[1mGenerating EusLisp code from dingo_msgs/RGB.msg[0m
+[ 72%] [34m[1mGenerating Lisp code from dingo_msgs/RGB.msg[0m
+[ 77%] [34m[1mGenerating Python msg __init__.py for dingo_msgs[0m
+[ 77%] Built target dingo_msgs_generate_messages_lisp
+[ 81%] [34m[1mGenerating EusLisp manifest code for dingo_msgs[0m
+[ 81%] Built target dingo_msgs_generate_messages_py
+[ 86%] [34m[1mGenerating Javascript code from dingo_msgs/Fans.msg[0m
+[ 90%] [34m[1mGenerating Javascript code from dingo_msgs/Lights.msg[0m
+[ 95%] [34m[1mGenerating Javascript code from dingo_msgs/Status.msg[0m
+[100%] [34m[1mGenerating Javascript code from dingo_msgs/RGB.msg[0m
+[100%] Built target dingo_msgs_generate_messages_nodejs
+[100%] Built target dingo_msgs_generate_messages_eus
+[100%] Built target dingo_msgs_generate_messages

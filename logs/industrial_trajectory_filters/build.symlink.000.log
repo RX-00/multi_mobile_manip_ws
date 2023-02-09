@@ -1,0 +1,4 @@
+Symlinking /home/robo/multi_mobile_manip_ws/devel/lib/libindustrial_trajectory_filters.so
+Symlinking /home/robo/multi_mobile_manip_ws/devel/lib/pkgconfig/industrial_trajectory_filters.pc
+Symlinking /home/robo/multi_mobile_manip_ws/devel/share/industrial_trajectory_filters/cmake/industrial_trajectory_filtersConfig-version.cmake
+Symlinking /home/robo/multi_mobile_manip_ws/devel/share/industrial_trajectory_filters/cmake/industrial_trajectory_filtersConfig.cmake

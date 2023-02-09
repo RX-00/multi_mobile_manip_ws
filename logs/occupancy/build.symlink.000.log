@@ -1,0 +1,4 @@
+Symlinking /home/robo/multi_mobile_manip_ws/devel/lib/pkgconfig/occupancy.pc
+Symlinking /home/robo/multi_mobile_manip_ws/devel/lib/occupancy/occupancy_node
+Symlinking /home/robo/multi_mobile_manip_ws/devel/share/occupancy/cmake/occupancyConfig-version.cmake
+Symlinking /home/robo/multi_mobile_manip_ws/devel/share/occupancy/cmake/occupancyConfig.cmake

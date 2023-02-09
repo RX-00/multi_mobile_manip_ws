@@ -1,0 +1,5 @@
+Symlinking /home/robo/multi_mobile_manip_ws/devel/lib/libd435_gazebo_plugin.so
+Symlinking /home/robo/multi_mobile_manip_ws/devel/lib/libt265_gazebo_plugin.so
+Symlinking /home/robo/multi_mobile_manip_ws/devel/lib/pkgconfig/realsense_simulator.pc
+Symlinking /home/robo/multi_mobile_manip_ws/devel/share/realsense_simulator/cmake/realsense_simulatorConfig.cmake
+Symlinking /home/robo/multi_mobile_manip_ws/devel/share/realsense_simulator/cmake/realsense_simulatorConfig-version.cmake

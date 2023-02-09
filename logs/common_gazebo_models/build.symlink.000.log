@@ -1,0 +1,3 @@
+Symlinking /home/robo/multi_mobile_manip_ws/devel/lib/pkgconfig/common_gazebo_models.pc
+Symlinking /home/robo/multi_mobile_manip_ws/devel/share/common_gazebo_models/cmake/common_gazebo_modelsConfig-version.cmake
+Symlinking /home/robo/multi_mobile_manip_ws/devel/share/common_gazebo_models/cmake/common_gazebo_modelsConfig.cmake

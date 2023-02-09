@@ -1,0 +1,5 @@
+ros_kortex/kortex_control
+/home/robo/multi_mobile_manip_ws/devel/.private/kortex_control/cmake.lock /home/robo/multi_mobile_manip_ws/devel/./cmake.lock
+/home/robo/multi_mobile_manip_ws/devel/.private/kortex_control/lib/pkgconfig/kortex_control.pc /home/robo/multi_mobile_manip_ws/devel/lib/pkgconfig/kortex_control.pc
+/home/robo/multi_mobile_manip_ws/devel/.private/kortex_control/share/kortex_control/cmake/kortex_controlConfig.cmake /home/robo/multi_mobile_manip_ws/devel/share/kortex_control/cmake/kortex_controlConfig.cmake
+/home/robo/multi_mobile_manip_ws/devel/.private/kortex_control/share/kortex_control/cmake/kortex_controlConfig-version.cmake /home/robo/multi_mobile_manip_ws/devel/share/kortex_control/cmake/kortex_controlConfig-version.cmake

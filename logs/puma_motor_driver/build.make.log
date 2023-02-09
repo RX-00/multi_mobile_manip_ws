@@ -1,0 +1,9 @@
+[ 14%] [32mBuilding CXX object CMakeFiles/puma_motor_driver.dir/src/driver.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/puma_motor_driver.dir/src/multi_driver_node.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/puma_motor_driver.dir/src/socketcan_gateway.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/puma_motor_driver.dir/src/diagnostic_updater.cpp.o[0m
+[ 71%] [32m[1mLinking CXX shared library /home/robo/multi_mobile_manip_ws/devel/.private/puma_motor_driver/lib/libpuma_motor_driver.so[0m
+[ 71%] Built target puma_motor_driver
+[ 85%] [32mBuilding CXX object CMakeFiles/puma_multi_controller_node.dir/src/multi_controller_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable /home/robo/multi_mobile_manip_ws/devel/.private/puma_motor_driver/lib/puma_motor_driver/puma_multi_controller_node[0m
+[100%] Built target puma_multi_controller_node

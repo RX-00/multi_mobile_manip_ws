@@ -1,0 +1,5 @@
+dingo/dingo_control
+/home/robo/multi_mobile_manip_ws/devel/.private/dingo_control/cmake.lock /home/robo/multi_mobile_manip_ws/devel/./cmake.lock
+/home/robo/multi_mobile_manip_ws/devel/.private/dingo_control/lib/pkgconfig/dingo_control.pc /home/robo/multi_mobile_manip_ws/devel/lib/pkgconfig/dingo_control.pc
+/home/robo/multi_mobile_manip_ws/devel/.private/dingo_control/share/dingo_control/cmake/dingo_controlConfig-version.cmake /home/robo/multi_mobile_manip_ws/devel/share/dingo_control/cmake/dingo_controlConfig-version.cmake
+/home/robo/multi_mobile_manip_ws/devel/.private/dingo_control/share/dingo_control/cmake/dingo_controlConfig.cmake /home/robo/multi_mobile_manip_ws/devel/share/dingo_control/cmake/dingo_controlConfig.cmake

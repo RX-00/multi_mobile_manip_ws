@@ -1,0 +1,14 @@
+Symlinking /home/robo/multi_mobile_manip_ws/devel/lib/libindustrial_robot_client_bswap.so
+Symlinking /home/robo/multi_mobile_manip_ws/devel/lib/libindustrial_robot_client.so
+Symlinking /home/robo/multi_mobile_manip_ws/devel/lib/libindustrial_robot_client_dummy.so
+Symlinking /home/robo/multi_mobile_manip_ws/devel/lib/pkgconfig/industrial_robot_client.pc
+Symlinking /home/robo/multi_mobile_manip_ws/devel/lib/industrial_robot_client/motion_download_interface
+Symlinking /home/robo/multi_mobile_manip_ws/devel/lib/industrial_robot_client/motion_streaming_interface
+Symlinking /home/robo/multi_mobile_manip_ws/devel/lib/industrial_robot_client/robot_state_bswap
+Symlinking /home/robo/multi_mobile_manip_ws/devel/lib/industrial_robot_client/motion_streaming_interface_bswap
+Symlinking /home/robo/multi_mobile_manip_ws/devel/lib/industrial_robot_client/motion_download_interface_bswap
+Symlinking /home/robo/multi_mobile_manip_ws/devel/lib/industrial_robot_client/robot_state
+Symlinking /home/robo/multi_mobile_manip_ws/devel/lib/industrial_robot_client/joint_trajectory_action
+Symlinking /home/robo/multi_mobile_manip_ws/devel/share/industrial_robot_client/cmake/industrial_robot_clientConfig-version.cmake
+Symlinking /home/robo/multi_mobile_manip_ws/devel/share/industrial_robot_client/cmake/platform_build_flags.cmake
+Symlinking /home/robo/multi_mobile_manip_ws/devel/share/industrial_robot_client/cmake/industrial_robot_clientConfig.cmake

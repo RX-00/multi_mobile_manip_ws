@@ -1,0 +1,180 @@
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target _ddynamic_reconfigure_generate_messages_check_deps_TutorialParams
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_lisp
+[35m[1mConsolidate compiler generated dependencies of target ddynamic_reconfigure[0m
+[  0%] Built target std_msgs_generate_messages_nodejs
+[ 11%] Built target ddynamic_reconfigure_generate_messages_py
+[ 17%] Built target ddynamic_reconfigure_generate_messages_cpp
+[ 29%] Built target ddynamic_reconfigure_generate_messages_eus
+[ 35%] Built target ddynamic_reconfigure_generate_messages_nodejs
+[ 41%] Built target ddynamic_reconfigure_generate_messages_lisp
+[ 47%] [32mBuilding CXX object CMakeFiles/ddynamic_reconfigure.dir/src/ddynamic_reconfigure.cpp.o[0m
+[ 47%] Built target ddynamic_reconfigure_gencpp
+[ 47%] Built target ddynamic_reconfigure_generate_messages
+[ 52%] [32mBuilding CXX object CMakeFiles/ddynamic_reconfigure.dir/src/param/dd_int_param.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/ddynamic_reconfigure.dir/src/param/dd_double_param.cpp.o[0m
+[ 64%] [32mBuilding CXX object CMakeFiles/ddynamic_reconfigure.dir/src/param/dd_bool_param.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/ddynamic_reconfigure.dir/src/param/dd_string_param.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/ddynamic_reconfigure.dir/src/param/dd_enum_param.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/ddynamic_reconfigure.dir/src/dd_param.cpp.o[0m
+[01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:[m[K In member function ‘[01m[Kvirtual void ddynamic_reconfigure::DDynamicReconfigure::start()[m[K’:
+[01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:45:9:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[Kfunction[m[K’ is ambiguous
+   45 |         [01;31m[Kfunction[m[K<bool(Reconfigure::Request& req, Reconfigure::Response& rsp)> callback = bind(&internalCallback,this,_1,_2);
+      |         [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/usr/include/boost/function/function_base.hpp:38[m[K,
+                 from [01m[K/usr/include/boost/function/detail/prologue.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/function.hpp:30[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/include/ddynamic_reconfigure/ddynamic_reconfigure.h:5[m[K,
+                 from [01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:11[m[K:
+[01m[K/usr/include/boost/function/function_fwd.hpp:32:38:[m[K [01;36m[Knote: [m[Kcandidates are: ‘[01m[Ktemplate<class Signature> class boost::function[m[K’
+   32 |   template<typename Signature> class [01;36m[Kfunction[m[K;
+      |                                      [01;36m[K^~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/functional:59[m[K,
+                 from [01m[K/usr/include/c++/9/pstl/glue_algorithm_defs.h:13[m[K,
+                 from [01m[K/usr/include/c++/9/algorithm:71[m[K,
+                 from [01m[K/usr/include/boost/math/tools/config.hpp:18[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:13[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/include/ddynamic_reconfigure/ddynamic_reconfigure.h:5[m[K,
+                 from [01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:11[m[K:
+[01m[K/usr/include/c++/9/bits/std_function.h:128:11:[m[K [01;36m[Knote: [m[K                ‘[01m[Ktemplate<class _Signature> class std::function[m[K’
+  128 |     class [01;36m[Kfunction[m[K;
+      |           [01;36m[K^~~~~~~~[m[K
+[01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:45:76:[m[K [01;31m[Kerror: [m[Kexpression list treated as compound expression in functional cast [[01;31m[K-fpermissive[m[K]
+   45 |         function<bool(Reconfigure::Request& req, Reconfigure::Response& rsp[01;31m[K)[m[K> callback = bind(&internalCallback,this,_1,_2);
+      |                                                                            [01;31m[K^[m[K
+[01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:45:18:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kbool[m[K’
+   45 |         function<[01;31m[Kbool[m[K(Reconfigure::Request& req, Reconfigure::Response& rsp)> callback = bind(&internalCallback,this,_1,_2);
+      |                  [01;31m[K^~~~[m[K
+[01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:47:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kcallback[m[K’ was not declared in this scope; did you mean ‘[01m[Kcallback_[m[K’?
+   47 |         set_service_ = nh_.advertiseService("set_parameters", [01;31m[Kcallback[m[K); // this allows changes to the parameters
+      |                                                               [01;31m[K^~~~~~~~[m[K
+      |                                                               [32m[Kcallback_[m[K
+[01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:[m[K In member function ‘[01m[Kvoid ddynamic_reconfigure::DDynamicReconfigure::setCallback(ddynamic_reconfigure::DDFunc)[m[K’:
+[01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:103:21:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+  103 |         callback_ = [01;31m[Kmake_shared<function<void(const DDMap&,int)> >[m[K(callback);
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:103:76:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kmake_shared<<expression error> >(ddynamic_reconfigure::DDFunc&)[m[K’
+  103 |         callback_ = make_shared<function<void(const DDMap&,int)> >(callback[01;31m[K)[m[K;
+      |                                                                            [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+                 from [01m[K/usr/include/boost/config/no_tr1/memory.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:23[m[K,
+                 from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/include/ddynamic_reconfigure/ddynamic_reconfigure.h:5[m[K,
+                 from [01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:11[m[K:
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:714:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)[m[K’
+  714 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:714:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:103:76:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  103 |         callback_ = make_shared<function<void(const DDMap&,int)> >(callback[01;31m[K)[m[K;
+      |                                                                            [01;31m[K^[m[K
+In file included from [01m[K/usr/include/boost/smart_ptr/make_shared.hpp:14[m[K,
+                 from [01m[K/usr/include/boost/make_shared.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/include/ddynamic_reconfigure/ddynamic_reconfigure.h:5[m[K,
+                 from [01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:11[m[K:
+[01m[K/usr/include/boost/smart_ptr/make_shared_object.hpp:248:87:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T, class ... Args> typename boost::detail::sp_if_not_array<T>::type boost::make_shared(Args&& ...)[m[K’
+  248 | template< class T, class... Args > typename boost::detail::sp_if_not_array< T >::type [01;36m[Kmake_shared[m[K( Args && ... args )
+      |                                                                                       [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/make_shared_object.hpp:248:87:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:103:76:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  103 |         callback_ = make_shared<function<void(const DDMap&,int)> >(callback[01;31m[K)[m[K;
+      |                                                                            [01;31m[K^[m[K
+In file included from [01m[K/usr/include/boost/smart_ptr/make_shared.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/make_shared.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/include/ddynamic_reconfigure/ddynamic_reconfigure.h:5[m[K,
+                 from [01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:11[m[K:
+[01m[K/usr/include/boost/smart_ptr/make_shared_array.hpp:18:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> typename boost::enable_if_<boost::is_bounded_array<T>::value, boost::shared_ptr<X> >::type boost::make_shared()[m[K’
+   18 | [01;36m[Kmake_shared[m[K()
+      | [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/make_shared_array.hpp:18:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:103:76:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  103 |         callback_ = make_shared<function<void(const DDMap&,int)> >(callback[01;31m[K)[m[K;
+      |                                                                            [01;31m[K^[m[K
+In file included from [01m[K/usr/include/boost/smart_ptr/make_shared.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/make_shared.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/include/ddynamic_reconfigure/ddynamic_reconfigure.h:5[m[K,
+                 from [01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:11[m[K:
+[01m[K/usr/include/boost/smart_ptr/make_shared_array.hpp:26:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> typename boost::enable_if_<boost::is_bounded_array<T>::value, boost::shared_ptr<X> >::type boost::make_shared(const typename boost::remove_extent<T>::type&)[m[K’
+   26 | [01;36m[Kmake_shared[m[K(const typename remove_extent<T>::type& value)
+      | [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/make_shared_array.hpp:26:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:103:76:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  103 |         callback_ = make_shared<function<void(const DDMap&,int)> >(callback[01;31m[K)[m[K;
+      |                                                                            [01;31m[K^[m[K
+In file included from [01m[K/usr/include/boost/smart_ptr/make_shared.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/make_shared.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/include/ddynamic_reconfigure/ddynamic_reconfigure.h:5[m[K,
+                 from [01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:11[m[K:
+[01m[K/usr/include/boost/smart_ptr/make_shared_array.hpp:34:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> typename boost::enable_if_<boost::is_unbounded_array<T>::value, boost::shared_ptr<X> >::type boost::make_shared(std::size_t)[m[K’
+   34 | [01;36m[Kmake_shared[m[K(std::size_t size)
+      | [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/make_shared_array.hpp:34:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:103:76:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  103 |         callback_ = make_shared<function<void(const DDMap&,int)> >(callback[01;31m[K)[m[K;
+      |                                                                            [01;31m[K^[m[K
+In file included from [01m[K/usr/include/boost/smart_ptr/make_shared.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/make_shared.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/include/ddynamic_reconfigure/ddynamic_reconfigure.h:5[m[K,
+                 from [01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:11[m[K:
+[01m[K/usr/include/boost/smart_ptr/make_shared_array.hpp:42:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> typename boost::enable_if_<boost::is_unbounded_array<T>::value, boost::shared_ptr<X> >::type boost::make_shared(std::size_t, const typename boost::remove_extent<T>::type&)[m[K’
+   42 | [01;36m[Kmake_shared[m[K(std::size_t size, const typename remove_extent<T>::type& value)
+      | [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/usr/include/boost/smart_ptr/make_shared_array.hpp:42:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:103:76:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  103 |         callback_ = make_shared<function<void(const DDMap&,int)> >(callback[01;31m[K)[m[K;
+      |                                                                            [01;31m[K^[m[K
+[01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:[m[K In member function ‘[01m[Kvoid ddynamic_reconfigure::DDynamicReconfigure::clearCallback()[m[K’:
+[01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:109:57:[m[K [01;31m[Kerror: [m[Kcall of overloaded ‘[01m[Kmake_shared<ddynamic_reconfigure::DDFunc>(void (*)(const DDMap&, int))[m[K’ is ambiguous
+  109 |         callback_ = make_shared<DDFunc>(&defaultCallback[01;31m[K)[m[K;
+      |                                                         [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/9/memory:81[m[K,
+                 from [01m[K/usr/include/boost/config/no_tr1/memory.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/smart_ptr/shared_ptr.hpp:23[m[K,
+                 from [01m[K/usr/include/boost/shared_ptr.hpp:17[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/include/ddynamic_reconfigure/ddynamic_reconfigure.h:5[m[K,
+                 from [01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:11[m[K:
+[01m[K/usr/include/c++/9/bits/shared_ptr.h:714:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = boost::function<void(const std::map<std::__cxx11::basic_string<char>, boost::shared_ptr<ddynamic_reconfigure::DDParam> >&, int)>; _Args = {void (*)(const std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, boost::shared_ptr<ddynamic_reconfigure::DDParam>, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, boost::shared_ptr<ddynamic_reconfigure::DDParam> > > >&, int)}][m[K’
+  714 |     [01;36m[Kmake_shared[m[K(_Args&&... __args)
+      |     [01;36m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/boost/smart_ptr/make_shared.hpp:14[m[K,
+                 from [01m[K/usr/include/boost/make_shared.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/forwards.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/include/ddynamic_reconfigure/ddynamic_reconfigure.h:5[m[K,
+                 from [01m[K/home/robo/multi_mobile_manip_ws/src/realsense-occupancy/ddynamic_reconfigure/src/ddynamic_reconfigure.cpp:11[m[K:
+[01m[K/usr/include/boost/smart_ptr/make_shared_object.hpp:248:87:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktypename boost::detail::sp_if_not_array<T>::type boost::make_shared(Args&& ...) [with T = boost::function<void(const std::map<std::__cxx11::basic_string<char>, boost::shared_ptr<ddynamic_reconfigure::DDParam> >&, int)>; Args = {void (*)(const std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, boost::shared_ptr<ddynamic_reconfigure::DDParam>, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, boost::shared_ptr<ddynamic_reconfigure::DDParam> > > >&, int)}; typename boost::detail::sp_if_not_array<T>::type = boost::shared_ptr<boost::function<void(const std::map<std::__cxx11::basic_string<char>, boost::shared_ptr<ddynamic_reconfigure::DDParam> >&, int)> >][m[K’
+  248 | template< class T, class... Args > typename boost::detail::sp_if_not_array< T >::type [01;36m[Kmake_shared[m[K( Args && ... args )
+      |                                                                                       [01;36m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/ddynamic_reconfigure.dir/build.make:76: CMakeFiles/ddynamic_reconfigure.dir/src/ddynamic_reconfigure.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:1207: CMakeFiles/ddynamic_reconfigure.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

@@ -1,0 +1,16 @@
+[  0%] Built target _mobile_manip_generate_messages_check_deps_GetValues
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target _mobile_manip_generate_messages_check_deps_ReachName
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target _mobile_manip_generate_messages_check_deps_ReachValues
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  9%] Built target gazebo_panel_plugin
+[ 27%] Built target mobile_manip_generate_messages_py
+[ 40%] Built target mobile_manip_generate_messages_cpp
+[ 59%] Built target mobile_manip_generate_messages_eus
+[ 72%] Built target mobile_manip_generate_messages_lisp
+[ 86%] Built target mobile_manip_generate_messages_nodejs
+[ 86%] Built target mobile_manip_generate_messages
+[100%] Built target dingo_custom_ros_controller

@@ -1,0 +1,4 @@
+Symlinking /home/robo/multi_mobile_manip_ws/devel/lib/libindustrial_utils.so
+Symlinking /home/robo/multi_mobile_manip_ws/devel/lib/pkgconfig/industrial_utils.pc
+Symlinking /home/robo/multi_mobile_manip_ws/devel/share/industrial_utils/cmake/industrial_utilsConfig.cmake
+Symlinking /home/robo/multi_mobile_manip_ws/devel/share/industrial_utils/cmake/industrial_utilsConfig-version.cmake
