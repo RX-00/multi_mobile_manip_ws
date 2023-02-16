@@ -29,7 +29,7 @@
       <node name="door_controller_spawner" pkg="controller_manager" type="spawner" ns="/door" args="--namespace=/door handle_position_controller door_position_controller" />
     </group>
 
-        <!-- node name="laser_scan_publisher" pkg="mobile_manip" type="laser_scan_publisher.py" output="screen" /-->
+    <!-- node name="laser_scan_publisher" pkg="mobile_manip" type="laser_scan_publisher.py" output="screen" /-->
     <node name="depthimage_to_laserscan" pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" >
       <remap from="image" to="/$(arg robot_name)/d435i/depth/image_rect_raw"/>
       <remap from="camera_info" to="/mobile_manip/d435i/depth/camera_info"/>

@@ -1,0 +1,137 @@
+<launch>
+    <arg name="use_sim_time" default="true" />
+    <arg name="gui" default="true" />
+    <arg name="headless" default="false" />
+    <arg name="robot_A_name" default="mobile_manip_A" />
+    <arg name="robot_B_name" default="mobile_manip_B" />
+    <arg name="world_name" default="$(find multi_mobile_manip)/worlds/box.world" />
+
+    <!-- Robot namespace -->
+    <arg name="start_delay_seconds" default="14"/>
+
+    <!-- Robot start point -->
+    <arg name="A_start_x_gz" default="3.9"/>
+    <arg name="A_start_y_gz" default="0.0"/>
+    <!-- Robot B start point -->
+    <arg name="B_start_x_gz" default="5.9"/>
+    <arg name="B_start_y_gz" default="0.0"/>
+
+    <!-- Launch Gazebo with the specified world -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="debug" value="false" />
+        <arg name="gui" value="$(arg gui)" />
+        <arg name="use_sim_time" value="$(arg use_sim_time)" />
+        <arg name="headless" value="$(arg headless)" />
+        <arg name="world_name" value="$(arg world_name)" />
+        <arg name="paused" value="true" />
+    </include>
+
+    <!-- EVERYTHING FOR ROBOT A -->
+
+    <!-- node name="laser_scan_publisher" pkg="mobile_manip" type="laser_scan_publisher.py" output="screen" /-->
+    <node name="depthimage_to_laserscan_A" pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" >
+      <remap from="image" to="/$(arg robot_A_name)/d435i/depth/image_rect_raw"/>
+      <remap from="camera_info" to="/mobile_manip/d435i/depth/camera_info"/>
+      <param name="output_frame_id" value="d435i_depth_frame_A"/>
+    </node>
+
+    <group ns="$(arg robot_A_name)"> <!-- /base -->
+        <!-- Spawn the robot -->
+        <include file="$(find mobile_manip)/launch/include/spawn_kortex_robot.launch">
+            <arg name="model_urdf" value="$(find mobile_manip)/urdf/dingo_gen3_lite.urdf.xacro"/>
+            <arg name="model_srdf" value="$(find mobile_manip)/urdf/dingo_gen3_lite.srdf.xacro"/>
+            <arg name="start_gazebo" value="false"/>
+            <arg name="robot_name" value="$(arg robot_A_name)"/>
+            <arg name="gazebo_gui"   value ="$(arg gui)"/>
+            <arg name="start_rviz" value="false"/>
+            <arg name="arm" value="gen3_lite"/>
+            <arg name="prefix" value="arm_"/>
+            <arg name="x0" value="$(arg A_start_x_gz)"/>
+            <arg name="y0" value="$(arg A_start_y_gz)"/>
+            <arg name="z0" value="0.015"/>
+            <arg name="yaw0" value="0"/>
+        </include>
+        <!-- Load Dingo controllers -->
+        <node pkg="twist_mux" type="twist_mux" name="twist_mux">
+            <rosparam command="load" file="$(find dingo_control)/config/twist_mux.yaml" />
+            <remap from="cmd_vel_out" to="dingo_velocity_controller/cmd_vel"/>
+        </node>
+
+        <include file="$(find mobile_manip)/launch/include/dingo_teleop.launch">
+            <arg name="joystick" value="false"/>
+        </include>
+
+        <!-- Dingo State Estimation -->
+        <!-- <node name="dingo_state_estimation" pkg="mobile_manip" type="dingo_state_estimation.py" output="screen" /> -->
+    </group>
+
+    <!-- AprilTag -->
+    <include file="$(find mobile_manip)/launch/include/apriltag_continuous_detection.launch">
+        <arg name="node_namespace" value="$(arg robot_A_name)_apriltag"/>
+        <arg name="camera_name" value="/$(arg robot_A_name)/t265/fisheye1" />
+        <arg name="camera_frame" value="t265_fisheye1_optical_frame" />
+        <arg name="image_topic" value="image_raw" />
+    </include>
+
+    <!-- Transform between t265 and d435i -->
+    <node pkg="tf" type="static_transform_publisher" name="$(arg robot_A_name)_t265_to_d400" args="-0.0133 0.008101 0.029705 0 0 0 /$(arg robot_A_name)/t265/t265_pose_frame_A /d435i_depth_frame_A 100"/>
+
+    <!-- Launch the example in that namespace-->
+    <node name="moveit_gen3lite" pkg="mobile_manip" type="move_it_trajectories.py" ns="$(arg robot_A_name)" output="screen" launch-prefix="bash -c 'sleep $(arg start_delay_seconds); $0 $@' "/>
+
+
+
+    <!-- EVERYTHING FOR ROBOT B -->
+
+    <!-- node name="laser_scan_publisher" pkg="mobile_manip" type="laser_scan_publisher.py" output="screen" /-->
+    <node name="depthimage_to_laserscan_B" pkg="depthimage_to_laserscan" type="depthimage_to_laserscan" >
+      <remap from="image" to="/$(arg robot_B_name)/d435i/depth/image_rect_raw"/>
+      <remap from="camera_info" to="/mobile_manip/d435i/depth/camera_info"/>
+      <param name="output_frame_id" value="d435i_depth_frame_B"/>
+    </node>
+
+    <group ns="$(arg robot_B_name)"> <!-- /base -->
+        <!-- Spawn the robot -->
+        <include file="$(find mobile_manip)/launch/include/spawn_kortex_robot.launch">
+            <arg name="model_urdf" value="$(find mobile_manip)/urdf/dingo_gen3_lite.urdf.xacro"/>
+            <arg name="model_srdf" value="$(find mobile_manip)/urdf/dingo_gen3_lite.srdf.xacro"/>
+            <arg name="start_gazebo" value="false"/>
+            <arg name="robot_name" value="$(arg robot_B_name)"/>
+            <arg name="gazebo_gui"   value ="$(arg gui)"/>
+            <arg name="start_rviz" value="false"/>
+            <arg name="arm" value="gen3_lite"/>
+            <arg name="prefix" value="arm_"/>
+            <arg name="x0" value="$(arg B_start_x_gz)"/>
+            <arg name="y0" value="$(arg B_start_y_gz)"/>
+            <arg name="z0" value="0.015"/>
+            <arg name="yaw0" value="0"/>
+        </include>
+        <!-- Load Dingo controllers -->
+        <node pkg="twist_mux" type="twist_mux" name="twist_mux">
+            <rosparam command="load" file="$(find dingo_control)/config/twist_mux.yaml" />
+            <remap from="cmd_vel_out" to="dingo_velocity_controller/cmd_vel"/>
+        </node>
+
+        <include file="$(find mobile_manip)/launch/include/dingo_teleop.launch">
+            <arg name="joystick" value="false"/>
+        </include>
+
+        <!-- Dingo State Estimation -->
+        <!-- <node name="dingo_state_estimation" pkg="mobile_manip" type="dingo_state_estimation.py" output="screen" /> -->
+    </group>
+
+    <!-- AprilTag -->
+    <include file="$(find mobile_manip)/launch/include/apriltag_continuous_detection.launch">
+        <arg name="node_namespace" value="$(arg robot_B_name)_apriltag"/>
+        <arg name="camera_name" value="/$(arg robot_B_name)/t265/fisheye1" />
+        <arg name="camera_frame" value="t265_fisheye1_optical_frame" />
+        <arg name="image_topic" value="image_raw" />
+    </include>
+
+    <!-- Transform between t265 and d435i -->
+    <node pkg="tf" type="static_transform_publisher" name="$(arg robot_B_name)_t265_to_d400" args="-0.0133 0.008101 0.029705 0 0 0 /$(arg robot_B_name)/t265/t265_pose_frame_B /d435i_depth_frame_B 100"/>
+
+    <!-- Launch the example in that namespace-->
+    <node name="moveit_gen3lite" pkg="mobile_manip" type="move_it_trajectories.py" ns="$(arg robot_B_name)" output="screen" launch-prefix="bash -c 'sleep $(arg start_delay_seconds); $0 $@' "/>
+
+</launch>

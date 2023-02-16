@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+    <world name="default">
+
+        <gui>
+            <camera name="user_camera">
+                <pose>13.2 -3.86 15.6 0 1.1 2.7</pose>
+            </camera>
+        </gui>
+
+        <physics type='ode'>
+            <max_step_size>0.001</max_step_size>
+            <real_time_factor>1</real_time_factor>
+            <real_time_update_rate>1000</real_time_update_rate>
+            <gravity>0 0 -9.8</gravity>
+        </physics>
+
+        <!-- A global light source -->
+        <include>
+            <uri>model://sun</uri>
+        </include>
+
+        <!-- A ground plane -->
+        <include>
+          <uri>model://my_ground_plane</uri>
+        </include>
+
+        <!-- Adding objects to the world -->
+        <!-- Add a second box -->
+        <model name="box1">
+          <include>
+              <pose>5.3 2.6 0.25 0.0 1.57 0.0</pose>
+              <uri>model://cardboard_box</uri>
+          </include>
+        </model>
+        <!-- with their April tag -->
+        <include>
+            <pose>5.455 2.6 0.38 1.57 0.0 1.57</pose>
+            <uri>model://Apriltag36_11_00007</uri>
+        </include>
+    </world>
+</sdf>
